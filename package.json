@@ -1,5 +1,5 @@
 {
-  "name": "saajan-website-2024",
+  "name": "saajan-website-tailwind",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,19 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "next": "14.0.4",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.9",
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "framer": "^2.4.1",
+    "framer-motion": "^10.16.15",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.3.2"
   },
   "devDependencies": {
     "typescript": "^5",
