@@ -2,7 +2,6 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import FullNavbar from "./fullNavbar";
 import { useMediaQuery, useTheme } from "@mui/material";
-import CompactBar from "./compactBar";
 import FramerMenu from "./framerMenu";
 
 const pagesArray = [
@@ -21,12 +20,11 @@ function ResponsiveAppBar() {
       position="static"
       sx={{ backgroundColor: "transparent", boxShadow: "0", mt: "20px" }}
     >
-      <FramerMenu pages={pagesArray} />
-      {/* {isMobile ? (
+      {isMobile ? (
         <FramerMenu pages={pagesArray} />
       ) : (
         <FullNavbar pages={pagesArray} />
-      )} */}
+      )}
     </AppBar>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const menuItems = ["Home", "Projects", "Blog", "Recipes"];
 
@@ -20,9 +21,15 @@ const menuVariant = {
 interface menuProps {
   state: boolean;
   setState: (currentState: boolean) => void;
+  pages: typeArray[];
 }
 
-const SideMenu = ({ state, setState }: menuProps) => {
+type typeArray = {
+  goTo: string;
+  name: string;
+};
+
+const SideMenu = ({ state, setState, pages }: menuProps) => {
   return (
     <>
       <motion.div
@@ -42,10 +49,17 @@ const SideMenu = ({ state, setState }: menuProps) => {
           Close
         </motion.button>
         <div className="mt-40"></div>
-        {menuItems.map((item) => (
-          <button key={item} className="my-3 text-4xl text-left">
-            {item}
-          </button>
+        {pages.map((item) => (
+          <Link
+            href={item.goTo}
+            onClick={() => {
+              setState(false);
+            }}
+          >
+            <button key={item.name} className="my-3 text-4xl text-left">
+              {item.name}
+            </button>
+          </Link>
         ))}
       </motion.div>
     </>

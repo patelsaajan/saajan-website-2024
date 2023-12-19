@@ -31,7 +31,9 @@ const FramerMenu = ({ pages }: prompts) => {
         </IconButton>
       </div>
       <AnimatePresence>
-        {menuState && <SideMenu state={menuState} setState={setMenuState} />}
+        {menuState && (
+          <SideMenu state={menuState} setState={setMenuState} pages={pages} />
+        )}
       </AnimatePresence>
     </div>
   );
