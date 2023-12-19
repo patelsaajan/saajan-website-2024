@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Container, IconButton } from "@mui/material";
 import Link from "next/link";
-import ShowModal from "./modal";
+import ShowModal from "./menuComponents/modal";
 import { motion, AnimatePresence } from "framer-motion";
-import SideMenu from "./sideMenu";
+import SideMenu from "./menuComponents/sideMenu";
 
 interface prompts {
   pages: typeArray[];
