@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const aboutMe = [
   " I'm originally from Cardiff and studied Electro-Mechanical Engineering at the University of Bristol. I take pride in holding a first-class master's degree in this field, with my guiding principles in life focusing on making the world a better place and assisting as many people as I can along the way.",
-  "Currently, I'm on a learning journey, delving into TypeScript and React, all the while sharpening my Python skills. When I'm not deeply engrossed in coding, you can find me passionately supporting Liverpool. I've discovered a unique way to blend my enthusiasm for football with my keen interest in data by venturing into the realms of data engineering and visualization.",
+  "Currently, I'm on a learning journey, delving into TypeScript and React, all the while sharpening my Python skills. When I'm not deeply engrossed in coding, you can find me passionately supporting Liverpool. I've discovered a unique way to blend my enthusiasm for football with my keen interest in data by venturing into the realms of data engineering and visualisation.",
   "  Away from the tech world, I'm a passionate cook who thrives on experimenting with recipes and discovering delightful flavour combinations.",
 ];
 
