@@ -1,7 +1,7 @@
 ---
     name: "Cannellini Gucamole"
     imageString: "/imgs/food/cani-gauc.jpeg"
-    date: 30 June 2023
+    date: 30 June 2022
     ingredients: ["cannellini beans [1 tin]", "sundried tomatos", "avocardo [2]", "lemon", "lettuce", "red onion [1/2]", "chillis [2/3]", "hummus", "siracha mayo", "sourdough bread"]
     optional: []
     story: ["I came across a similar recipe on an Instagram reel and decided to put my own twist on it, which eventually transformed into an alternative guacamole that's ideal for scorching days. During the summertime, particularly on extremely hot days, my dad tends to avoid eating, which is rather surprising because he doesn't strike me as someone who shies away from food.", "However, spending the entire day without eating isn't the wisest choice, so I started preparing this dish for him on those sweltering days to ensure he stays well-nourished and receives the essential nutrients his aging body requires."]

@@ -22,42 +22,33 @@ const RecipeCard = ({
   const theme = useTheme();
   return (
     <Link href={`/recipes/${recipeLink}`}>
-      <Box
-        sx={{
-          display: "flex column",
-          border: "3px solid black",
-          boxShadow: 1,
-          width: "280px",
-          justifyContent: "center",
-          px: "10px",
-          paddingTop: "40px",
-          m: "20px",
-          transition: "200ms all ease-in",
-          borderRadius: "16px",
-          minHeight: "350px",
-          "&:hover": {
-            border: `3px solid ${theme.palette.primary.main}`,
-            cursor: "pointer",
-          },
-        }}
-      >
-        <Image
-          src={imageString}
-          width={200}
-          height={200}
-          alt="test image of food"
-          style={{ borderRadius: "16px" }}
-        />
+      <div className="flex flex-col m-5 min-h-80 w-72 border-black border-solid border-2 rounded-2xl shadow-black ">
+        {/* <div className="flex w-full pt-8 mb-4 justify-center"> */}
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            pt: "28px",
+            mb: "16px",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            src={imageString}
+            width={200}
+            height={200}
+            alt="test image of food"
+            style={{ borderRadius: "16px" }}
+          />
+        </Box>
+        {/* </div> */}
         <Typography variant="h5" fontWeight={700}>
           {name}
         </Typography>
         <Typography variant="body2" sx={{ mt: "5px" }}>
           {date}
         </Typography>
-        {/* <Typography variant="body2" sx={{ textAlign: "justify", mt: "5px" }}>
-          {desc}
-        </Typography> */}
-      </Box>
+      </div>
     </Link>
   );
 };
