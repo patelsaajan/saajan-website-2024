@@ -5,7 +5,7 @@ import Link from "next/link";
 const menuItems = ["Home", "Projects", "Blog", "Recipes"];
 
 const menuVariant = {
-  hidden: { opacity: 0, x: "-100vw" },
+  hidden: { opacity: 1, x: "-100vw" },
   show: {
     opacity: 1,
     x: 0,
@@ -57,7 +57,7 @@ const SideMenu = ({ state, setState, pages }: menuProps) => {
             }}
           >
             <button key={item.name} className="my-3 text-4xl text-left">
-              {item.name}
+              {item.name.toUpperCase()}
             </button>
           </Link>
         ))}
