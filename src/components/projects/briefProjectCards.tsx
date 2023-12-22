@@ -35,6 +35,7 @@ const BriefProjectCards = ({
           p: "10px",
           gap: "20px",
           borderRadius: "16px",
+          alignItems: "center",
           transition: "200ms all ease-out",
           textAlign: "justify",
           "&:hover": { cursor: "pointer", transform: "scale(1.05)" },
@@ -46,7 +47,7 @@ const BriefProjectCards = ({
             justifyContent: "center",
             width: "100%",
             minWidth: "200px",
-            maxWidth: isMobile ? "100&" : "200px",
+            maxWidth: isMobile ? "100%" : "200px",
             height: isMobile ? "250px" : "200px",
           }}
         >

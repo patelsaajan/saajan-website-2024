@@ -22,8 +22,19 @@ const RecipeCard = ({
   const theme = useTheme();
   return (
     <Link href={`/recipes/${recipeLink}`}>
-      <div className="flex flex-col m-5 min-h-80 w-72 border-black border-solid border-2 rounded-2xl shadow-black ">
-        {/* <div className="flex w-full pt-8 mb-4 justify-center"> */}
+      {/* <div className="flex flex-col m-5 min-h-80 w-72 border-black border-solid border-2 rounded-2xl shadow-black "> */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          m: "20px",
+          minHeight: "320px",
+          width: "280px",
+          border: "2px solid black",
+          borderRadius: "16px",
+          boxShadow: "3",
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -41,14 +52,15 @@ const RecipeCard = ({
             style={{ borderRadius: "16px" }}
           />
         </Box>
-        {/* </div> */}
+
         <Typography variant="h5" fontWeight={700}>
           {name}
         </Typography>
         <Typography variant="body2" sx={{ mt: "5px" }}>
           {date}
         </Typography>
-      </div>
+      </Box>
+      {/* </div> */}
     </Link>
   );
 };
