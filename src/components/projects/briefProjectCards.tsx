@@ -44,12 +44,16 @@ const BriefProjectCards = ({
           sx={{
             display: "flex",
             justifyContent: "center",
+            width: "100%",
+            minWidth: "200px",
+            maxWidth: isMobile ? "100&" : "200px",
+            height: isMobile ? "250px" : "200px",
           }}
         >
           <Image
             src={imageSrc}
-            width={200}
-            height={200}
+            width={isMobile ? 250 : 200}
+            height={isMobile ? 250 : 200}
             alt={"picture of the 3pi+ robot"}
             style={{
               border: "2px solid black",
