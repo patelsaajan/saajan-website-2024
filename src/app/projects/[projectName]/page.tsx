@@ -9,12 +9,12 @@ interface pagePromps {
   params: { projectName: string };
 }
 
-// export const generateStaticParams = async () => {
-//   const posts = getPostMetadata(
-//     path.join(process.cwd(), "/markdownFiles/projects/")
-//   );
-//   return posts.map((post) => ({ slug: post.slug }));
-// };
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata(
+    path.join(process.cwd(), "/markdownFiles/projects/")
+  );
+  return posts.map((post) => ({ slug: post.slug }));
+};
 
 const page = ({ params }: pagePromps) => {
   // const slug = params.projectName;
