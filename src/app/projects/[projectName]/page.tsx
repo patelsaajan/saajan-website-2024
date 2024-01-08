@@ -21,13 +21,14 @@ const page = ({ params }: pagePromps) => {
   const post = getMarkdownContent(slug, "markdownFiles/projects/");
   return (
     <Container maxWidth="lg">
+      hello me
       <Typography
         variant="h5"
         sx={{ textAlign: "center", my: "40px", fontWeight: "600" }}
       >
         {post.data.title}
       </Typography>
-      <Markdown>{post.content}</Markdown>
+      {/* <Markdown>{post.content}</Markdown> */}
     </Container>
   );
 };
