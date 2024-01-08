@@ -18,18 +18,17 @@ export const generateStaticParams = async () => {
 
 const page = ({ params }: pagePromps) => {
   const slug = params.projectName;
-  const post = getMarkdownContent(slug, "/markdownFiles/projects/");
+  const post = getMarkdownContent("solarbot", "/markdownFiles/projects/");
+  console.log(post);
   return (
     <Container maxWidth="lg">
       <Typography
         variant="h5"
         sx={{ textAlign: "center", my: "40px", fontWeight: "600" }}
       >
-        {" "}
-        hello me
-        {/* {post.data.title} */}
+        {post.data.title}
       </Typography>
-      {/* <Markdown>{post.content}</Markdown> */}
+      <Markdown>{post.content}</Markdown>
     </Container>
   );
 };
