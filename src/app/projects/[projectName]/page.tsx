@@ -10,10 +10,9 @@ interface pagePromps {
 }
 
 export const generateStaticParams = async () => {
-  // const posts = getPostMetadata(
-  //   path.join(process.cwd(), "/markdownFiles/projects/")
-  // );
-  const posts = getPostMetadata("markdownFiles/projects/");
+  const posts = getPostMetadata(
+    path.join(process.cwd(), "/markdownFiles/projects/")
+  );
   return posts.map((post) => ({ slug: post.slug }));
 };
 
