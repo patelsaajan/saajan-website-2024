@@ -18,7 +18,7 @@ export const generateStaticParams = async () => {
 
 const page = ({ params }: pagePromps) => {
   const slug = params.projectName;
-  const post = getMarkdownContent("solarbot", "/markdownFiles/projects/");
+  const post = getMarkdownContent(slug, "/markdownFiles/projects/");
   console.log(post);
   return (
     <Container maxWidth="lg">
