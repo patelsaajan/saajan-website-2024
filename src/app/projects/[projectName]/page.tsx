@@ -17,8 +17,8 @@ export const generateStaticParams = async () => {
 };
 
 const page = ({ params }: pagePromps) => {
-  // const slug = params.projectName;
-  // const post = getMarkdownContent(slug, "markdownFiles/projects/");
+  const slug = params.projectName;
+  const post = getMarkdownContent(slug, "markdownFiles/projects/");
   return (
     // <Container maxWidth="lg">
     //   <Typography
