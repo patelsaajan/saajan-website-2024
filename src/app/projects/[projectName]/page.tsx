@@ -20,16 +20,15 @@ const page = ({ params }: pagePromps) => {
   const slug = params.projectName;
   const post = getMarkdownContent(slug, "markdownFiles/projects/");
   return (
-    // <Container maxWidth="lg">
-    //   <Typography
-    //     variant="h5"
-    //     sx={{ textAlign: "center", my: "40px", fontWeight: "600" }}
-    //   >
-    //     {post.data.title}
-    //   </Typography>
-    //   <Markdown>{post.content}</Markdown>
-    // </Container>
-    <>Hello</>
+    <Container maxWidth="lg">
+      <Typography
+        variant="h5"
+        sx={{ textAlign: "center", my: "40px", fontWeight: "600" }}
+      >
+        {post.data.title}
+      </Typography>
+      <Markdown>{post.content}</Markdown>
+    </Container>
   );
 };
 
