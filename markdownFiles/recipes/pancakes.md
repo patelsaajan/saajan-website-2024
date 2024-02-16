@@ -4,7 +4,7 @@
     date: 13 Feb 2024
     ingredients: ["flour [125g]", "soya milk [240ml]", "sugar [1 tbsp]", "apple cider vinegar [1 tbsp]", "baking powser [1 tbsp]", "vanilla extract [1 tsp]", "salt [1/2 tsp]", ]
     optional: ["chia seeds [1 tsp]", "flax seeds [1 tsp]"]
-    story: ["I was staying with a mate, and it was pancake day, so I was like, why not make some pancakes? That's pretty much it for this one!"]
+    story: ["I was staying with a mate, and it was pancake day, so I was like, why not make some pancakes? That's pretty much it for this one!", "Additionally, I need some practice for Wednesday, February 28th, 2024! ;)"]
 ---
 
 <div style="text-align : center; margin-top:70px;color: #FF6464 ">### Method</div>
