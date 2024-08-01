@@ -7,8 +7,8 @@ import FramerMenu from "./framerMenu";
 const pagesArray = [
   { name: "home", goTo: "/" },
   { name: "projects", goTo: "/projects" },
-  { name: "blog", goTo: "/blog" },
-  // { name: "diary", goTo: "/diary" },
+  // { name: "blog", goTo: "/blog" },
+  { name: "diary", goTo: "/diary" },
   { name: "recipes", goTo: "/recipes" },
 ];
 

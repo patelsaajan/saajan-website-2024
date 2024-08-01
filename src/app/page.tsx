@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <>
       <HeroHome />
-      <RecentPosts /> <FeaturedWork />
+      {/* <RecentPosts /> */}
+      <FeaturedWork />
     </>
   );
 }
